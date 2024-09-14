@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "lastName": "Biswas",
+    "firstName": "Nifaz",
+    "patronym": "MD",
+    "gender": "male",
+    "weddingYear": "1887",
+    "weddingMonth": "1",
+    "weddingDay": "30",
+    "birthYear": 1868,
+    "birthPlace": "Uttor Bhabanipur, Dharampur,Kushtia",
+    "deathYear": 1929,
+    "deathPlace": "Raita",
+    "nationality": "Bangladeshi",
+    "families": [],
+    "isFamilyRoot": true
+  },
+  {
+    "id": "2",
+    "lastName": "Gourobi",
+    "firstName": "Mst",
+    "patronym": "Necha",
+    "gender": "female",
+    "weddingYear": "1887",
+    "weddingMonth": "1",
+    "weddingDay": "30",
+    "birthYear": 1867,
+    "birthPlace": "Uttor Bhabanipur, Dharampur,Kushtia",
+    "deathYear": 2023,
+    "deathMonth": 12,
+    "deathDay": 4,
+    "deathPlace": "Dharampur",
+    "nationality": "Bangladeshi",
+    "families": [],
+    "isFamilyRoot": true
+  },
+
+  {
+    "id": "3",
+    "lastName": "Ali",
+    "firstName": "Md Tujam",
+    "patronym": "Biswas",
+    "gender": "male",
+    "weddingYear": "1908",
+    "weddingMonth": "1",
+    "weddingDay": "28",
+    "birthYear": 1887,
+    "birthMonth": 11,
+    "birthDay": 21,
+    "birthPlace": "д.Локтионово, Курская губерния",
+    "deathYear": 1975,
+    "deathMonth": 2,
+    "deathDay": 14,
+    "deathPlace": "",
+    "nationality": "",
+    "families": [
+      {
+        "id": "2",
+        "lastName": "dad"
+      },
+      {
+        "id": "1",
+        "lastName": "fsdf"
+      }
+    ],
+    "isFamilyRoot": false
+  },
+  {
+    "id": "4",
+    "lastName": "Banera",
+    "firstName": "Mst ",
+    "patronym": "Khatun",
+    "gender": "female",
+    "weddingYear": "1908",
+    "weddingMonth": "1",
+    "weddingDay": "28",
+    "birthYear": 1889,
+    "deathYear": 1947,
+    "deathMonth": 10,
+    "deathPlace": "sdf",
+    "nationality": "fsdfds",
+    "families": [],
+    "isFamilyRoot": false
+  },
+  {
+    "id": "5",
+    "lastName": "Rehena",
+    "firstName": "Mst",
+    "patronym": "Khatun",
+    "gender": "female",
+    "birthYear": 1893,
+    "birthMonth": 10,
+    "birthDay": 13,
+    "birthPlace": "fsdf, sdfsdf",
+    "families": [
+      {
+        "id": "2",
+        "lastName": "fdfs"
+      },
+      {
+        "id": "1",
+        "lastName": "fsdfsd"
+      }
+    ],
+    "isFamilyRoot": false
+  },
+  {
+    "id": "6",
+    "lastName": "Mucha",
+    "firstName": "Md",
+    "patronym": "Biswas",
+    "gender": "male",
+    "birthYear": 1893,
+    "birthMonth": 10,
+    "birthDay": 13,
+    "birthPlace": "fsdfdsf, ddsdfd",
+    "families": [
+      {
+        "id": "2",
+        "lastName": "fsdfds"
+      },
+      {
+        "id": "1",
+        "lastName": "fsdfdsf"
+      }
+    ],
+    "isFamilyRoot": true
+  },
+  {
+    "id": "7",
+    "lastName": "Jabbar",
+    "firstName": "Md",
+    "patronym": "Biswas",
+    "gender": "male",
+    "birthYear": 1893,
+    "birthMonth": 10,
+    "birthDay": 13,
+    "birthPlace": "",
+    "families": [
+      {
+        "id": "2",
+        "lastName": ""
+      },
+      {
+        "id": "1",
+        "lastName": ""
+      }
+    ],
+    "isFamilyRoot": true
+  }
+]

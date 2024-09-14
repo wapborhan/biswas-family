@@ -1,0 +1,128 @@
+[
+  {
+    "id": "1",
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "type": "married",
+        "id": "2"
+      }
+    ],
+    "children": [
+      {
+        "type": "blood",
+        "id": "3"
+      },
+      {
+        "type": "blood",
+        "id": "6"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "type": "married",
+        "id": "1"
+      }
+    ],
+    "children": [
+      {
+        "type": "blood",
+        "id": "3"
+      },
+      {
+        "type": "blood",
+        "id": "6"
+      }
+    ]
+  },
+
+  {
+    "id": "3",
+    "parents": [
+      {
+        "type": "blood",
+        "id": "2"
+      },
+      {
+        "type": "blood",
+        "id": "1"
+      }
+    ],
+    "siblings": [],
+    "spouses": [
+      {
+        "type": "married",
+        "id": "4"
+      }
+    ],
+    "children": [
+      {
+        "type": "blood",
+        "id": "5"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "type": "married",
+        "id": "3"
+      }
+    ],
+    "children": [
+      {
+        "type": "blood",
+        "id": "5"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "type": "married",
+        "id": "7"
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6",
+    "parents": [
+      {
+        "type": "blood",
+        "id": "2"
+      },
+      {
+        "type": "blood",
+        "id": "1"
+      }
+    ],
+    "siblings": [],
+    "spouses": [],
+    "children": []
+  },
+  {
+    "id": "7",
+    "parents": [],
+    "siblings": [],
+    "spouses": [
+      {
+        "type": "married",
+        "id": "5"
+      }
+    ],
+    "children": []
+  }
+]
