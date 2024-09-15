@@ -15,7 +15,7 @@ export const readNodesFromJson = (): TreeNode[] => {
       data: {
         ...data,
         fullName: getFullName(data),
-        families: data.families.sort((a, b) => {
+        families: (data.families as Family[]).sort((a, b) => {
           if (a.lastName > b.lastName) {
             return 1;
           }
