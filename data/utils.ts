@@ -37,8 +37,8 @@ export const readFamilies = (): Family[] => {
 const getFullName = ({ firstName, lastName, patronym }: TreeNodeDataFromJson): string => {
   const full = [];
 
-  if (lastName) full.push(lastName);
   if (firstName) full.push(firstName);
+  if (lastName) full.push(lastName);
   if (patronym) full.push(patronym);
 
   return full.join(" ");

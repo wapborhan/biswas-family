@@ -68,7 +68,7 @@ export const TreeNodeDetailsBio: FC<TreeNodeDetailsBioProps> = ({
         )}
         {siblings && siblings.length > 0 && (
           <>
-            <span className={s.gridItemTitle}>Братья и сестры</span>
+            <span className={s.gridItemTitle}>Brothers and sisters</span>
             <div className={classNames(s.gridItemValue)}>
               <BioRelationButtons onClick={onRelationNodeClick} items={siblings} relationType={RelationType.Siblings} />
             </div>
@@ -110,7 +110,7 @@ export const TreeNodeDetailsBio: FC<TreeNodeDetailsBioProps> = ({
         )}
         {rewards && (
           <>
-            <span className={s.gridItemTitle}>Награды</span>
+            <span className={s.gridItemTitle}>Awards</span>
             <span className={s.gridItemValue}>{rewards.join(", ")}</span>
           </>
         )}
