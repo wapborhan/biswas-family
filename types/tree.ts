@@ -26,10 +26,12 @@ export type TreeNodeDataFromJson = {
   education: string;
   occupation: string;
   rewards: string[];
+  
   bio: string;
 }>;
 export type TreeNodeData = TreeNodeDataFromJson & {
   fullName: string;
+  pictures: string;
   families: Family[];
 };
 export type TreeNodeRelation = Readonly<{
@@ -42,6 +44,7 @@ export type RelationInfo = {
   type: RelType;
   fullName: string;
   firstName: string;
+ 
 };
 
 export type TreeNodeDataWithRelations = TreeNodeData & {

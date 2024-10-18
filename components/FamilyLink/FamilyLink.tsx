@@ -1,18 +1,19 @@
 import classNames from "classnames";
 import { FC } from "react";
 import s from "./FamilyLink.module.css";
+import Link from "next/link";
 
 type FamilyLinkProps = {
   familyName: string;
-  href: string;
+  link: string;
 };
 
-const FamilyLink: FC<FamilyLinkProps> = ({ familyName, href }) => (
+const FamilyLink: FC<FamilyLinkProps> = ({ familyName, link }) => (
   <div className={s.container}>
     <div className={classNames(s.ball)} />
-    <a href={href} className={s.familyLink}>
-      {familyName}
-    </a>
+    <Link href={link} passHref>
+      <span className={s.familyLink}>{familyName}</span>
+    </Link>
   </div>
 );
 

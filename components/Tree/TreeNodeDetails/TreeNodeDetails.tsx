@@ -9,9 +9,9 @@ import { TreeNodeFamilies } from "./TreeNodeFamilies/TreeNodeFamilies";
 import { getTreeNodeDetails } from "./utils";
 
 const navigation = [
-  { id: 1, title: "Biography" },
-  { id: 2, title: "Gallery" },
-  { id: 3, title: "Families" },
+  { id: 1, title: "জীবনী" },
+  { id: 2, title: "ছবি" },
+  { id: 3, title: "পরিবার" },
 ];
 
 const TreeNodeDetails: FC = () => {
@@ -21,21 +21,24 @@ const TreeNodeDetails: FC = () => {
 
   if (!nodeDetails) return null;
 
+  console.log(nodeDetails);
+
   const tabContent =
     selectedNavId === 1 ? (
       <TreeNodeDetailsBio {...nodeDetails} onRelationNodeClick={(id) => selectNode(id)} />
     ) : selectedNavId === 2 ? (
       <>
-        <span className={s.rootItem}>К сожалению, у нас пока нет фотографий этого человека.</span>
-        <span className={s.rootItem}>
-          Если вы хотите помочь и у вас есть фото, которые вы хотите добавить в галерею, пожалуйста,{" "}
-          <BioLink
-            href="https://wa.me/+79853522893?text=Здравствуйте!%20 Пишу%20насчет%20проекта%20ДРЕВО"
-            text="напишите нам"
-            newTab={true}
-          />
-          .
-        </span>
+        {nodeDetails.pictures ? (
+          <img src={nodeDetails.pictures} alt="Image" height={100} width={100} />
+        ) : (
+          <>
+            <span className={s.rootItem}>দুর্ভাগ্যবশত, আমাদের কাছে এখনও এই ব্যক্তির ছবি নেই।</span>
+            <span className={s.rootItem}>
+              আপনি যদি সাহায্য করতে চান এবং গ্যালারিতে ফটো যোগ করতে চান তবে দয়া করে আমাদের
+              <BioLink href="https://wa.me/+8801620557840?text=Hello" text=" Whatsapp করুন" newTab={true} />।
+            </span>
+          </>
+        )}
       </>
     ) : (
       <TreeNodeFamilies {...nodeDetails} />
@@ -50,8 +53,9 @@ const TreeNodeDetails: FC = () => {
         <h2 className={s.name}>{nodeDetails.fullName}</h2>
         {hasSubTree && (
           <span className={s.hasSubTreeNote}>
-            В дереве видны не все предки. <br /> На вкладке Семьи можно посмотреть,
-            <wbr /> от кого происходит {nodeDetails.firstName}.
+            এখানে সব পূর্বপুরুষ দেখা যায় না। <br />
+            পরিবার ট্যাবে আপনি দেখতে পাবেন
+            <wbr /> {nodeDetails.firstName}.
           </span>
         )}
       </div>

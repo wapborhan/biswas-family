@@ -10,7 +10,7 @@ import TreeNode from "./TreeNode/TreeNode";
 
 const ReactFamilyTree = dynamic(() => import("@/lib/react-family-tree"), {
   ssr: false,
-  loading: () => <p>Загружаем дерево...</p>,
+  loading: () => <p>লোড হচ্ছে...</p>,
 });
 
 const nodes = getTreeNodesArray();
