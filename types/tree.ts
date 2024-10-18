@@ -25,8 +25,8 @@ export type TreeNodeDataFromJson = {
   nationality: string;
   education: string;
   occupation: string;
+  pictures: string;
   rewards: string[];
-  
   bio: string;
 }>;
 export type TreeNodeData = TreeNodeDataFromJson & {
